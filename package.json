@@ -1,0 +1,27 @@
+{
+  "name": "sg-portfoliov2",
+  "version": "1.0.0",
+  "description": "Front-end developer portfiolo page ",
+  "main": "-",
+  "scripts": {
+    "scss:mobile": "node-sass ./scss/_mobile.scss --source-map true -o -r ./css/mobile.css --output-style compressed",
+    "scss:desktop": "node-sass ./scss/_desktop.scss --source-map true -o -r ./css/desktop.css --output-style compressed",
+    "dev": "npm-run-all -p scss:*",
+    "watch": "watch \"npm run dev\" ./scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SG-WebDev/sg-portfolioV2.git"
+  },
+  "author": "SG-WebDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SG-WebDev/sg-portfolioV2/issues"
+  },
+  "homepage": "https://sgrobelny.dev",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "watch": "^1.0.2"
+  }
+}
