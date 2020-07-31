@@ -4,8 +4,8 @@
   "description": "Front-end developer portfiolo page ",
   "main": "-",
   "scripts": {
-    "scss:mobile": "node-sass ./scss/_mobile.scss --source-map true -o -r ./css/mobile.css --output-style compressed",
-    "scss:desktop": "node-sass ./scss/_desktop.scss --source-map true -o -r ./css/desktop.css --output-style compressed",
+    "scss:mobile": "node-sass ./scss/mobile.scss --source-map true -o -r ./css/mobile.css --output-style compressed",
+    "scss:desktop": "node-sass ./scss/desktop.scss --source-map true -o -r ./css/desktop.css --output-style compressed",
     "dev": "npm-run-all -p scss:*",
     "watch": "watch \"npm run dev\" ./scss"
   },
