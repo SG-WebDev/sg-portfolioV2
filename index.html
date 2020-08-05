@@ -19,6 +19,41 @@
 </head>
 <body>
 <div class="container-fluid">
+    <header class="header">
+        <div class="navTrigger navTrigger--open">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav__Header">
+            <div class="nav__Logo">
+                <img class="nav__LogoImage" src="./assets/img/logo.svg" alt="LOGO">
+                <div class="nav__LogoText"></div>
+            </div>
+            <div class="navTrigger navTrigger--close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="nav__Lang">
+                <div class="nav__LangItem nav__LangItem--active" data-lang="pl">PL</div>
+                <div class="nav__LangSeparator">|</div>
+                <div class="nav__LangItem" data-lang="en">EN</div>
+            </div>
+        </div>
+        <div class="nav__Content">
+            <div class="nav__Item">
+                <a class="nav__ItemLink" href="#EntrySection">start</a>
+            </div>
+            <div class="nav__Item">
+                <a class="nav__ItemLink" href="#AboutSection">o mnie</a>
+            </div>
+            <div class="nav__Item">
+                <a class="nav__ItemLink" href="#PortfolioSection">projekty</a>
+            </div>
+            <div class="nav__Item">
+                <a class="nav__ItemLink" href="#ContactSection">kontakt</a>
+            </div>
+        </div>
+    </nav>
     <section id="EntrySection" class="section section--entry">
         <div class="row">
             <div class="col-12 col-md-6 section__Column">
