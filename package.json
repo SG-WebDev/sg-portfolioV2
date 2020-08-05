@@ -1,13 +1,14 @@
 {
   "name": "sg-portfoliov2",
   "version": "1.0.0",
-  "description": "Front-end developer portfiolo page ",
+  "description": "Front-end developer portfiolo page",
   "main": "-",
   "scripts": {
-    "scss:mobile": "node-sass ./scss/mobile.scss --source-map true -o -r ./css/mobile.css --output-style compressed",
-    "scss:desktop": "node-sass ./scss/desktop.scss --source-map true -o -r ./css/desktop.css --output-style compressed",
-    "dev": "npm-run-all -p scss:*",
-    "watch": "watch \"npm run dev\" ./scss"
+    "scss:mobile": "node-sass ./src/scss/mobile.scss --source-map true -o -r ./dist/css/mobile.css --output-style compressed",
+    "scss:desktop": "node-sass ./src/scss/desktop.scss --source-map true -o -r ./dist/css/desktop.css --output-style compressed",
+    "js:uglify": "uglifyjs ./src/js/* --output dist/js/index.js",
+    "dev": "npm-run-all -p scss:* js:*",
+    "watch": "watch \"npm run dev\" ./src"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
+    "uglify-js": "^3.10.1",
     "watch": "^1.0.2"
   }
 }
