@@ -1,0 +1,36 @@
+// colors
+$gold: #d0a264;
+$darkGray: #333333;
+$gray: #666666;
+
+//fonts
+$mainFontFamily: 'Raleway', sans-serif;
+$altFontFamily: 'Julius Sans One', sans-serif;
+$desktopDefaultFontSize: 24px;
+$mobileDefaultFontSize: 20px;
+
+//mixins
+@mixin defaultFont($fontSize) {
+  font-family: $mainFontFamily;
+  font-size: $fontSize;
+  font-weight: 400;
+  color: $gray;
+}
+
+@mixin heading1 {
+  font-family: $altFontFamily;
+  font-size: 3.5rem;
+  color: $darkGray;
+}
+
+@mixin heading2 {
+  font-family: $altFontFamily;
+  font-size: 3rem;
+  color: $darkGray;
+}
+
+@mixin heading3 {
+  font-family: $altFontFamily;
+  font-size: 1.5rem;
+  color: $darkGray;
+}
