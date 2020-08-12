@@ -1,1 +1,51 @@
 @import 'params';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.entryLines {
+  position: absolute;
+  &--left {
+    top: 15px;
+    left: 0;
+  }
+  &--right {
+    bottom: 15px;
+    right: 0;
+  }
+}
+
+.section {
+  position: relative;
+  display: flex;
+  &__Column {
+    align-self: center;
+  }
+  &__Heading {
+    text-align: center;
+    &--h1 {
+      @include heading1();
+    }
+    &--h2 {
+      @include heading2();
+    }
+    &--h3 {
+      @include heading3();
+    }
+  }
+  &__PageTrigger {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}

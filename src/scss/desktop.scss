@@ -3,3 +3,17 @@
 body {
   @include defaultFont($desktopDefaultFontSize);
 }
+
+.navTrigger {
+  width: 40px;
+  margin: 25px;
+}
+
+.logo {
+  width: 600px;
+  margin: auto;
+}
+
+.section {
+  min-height: 100vh;
+}

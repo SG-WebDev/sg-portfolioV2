@@ -19,18 +19,22 @@ $mobileDefaultFontSize: 20px;
 
 @mixin heading1 {
   font-family: $altFontFamily;
-  font-size: 3.5rem;
+  font-size: 4rem;
+  font-weight: 400;
   color: $darkGray;
 }
 
 @mixin heading2 {
   font-family: $altFontFamily;
   font-size: 3rem;
+  font-weight: 400;
   color: $darkGray;
 }
 
 @mixin heading3 {
   font-family: $altFontFamily;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
   color: $darkGray;
+  letter-spacing: 3px;
 }
