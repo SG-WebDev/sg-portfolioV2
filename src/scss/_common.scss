@@ -10,6 +10,15 @@
   width: 100%;
 }
 
+.navTrigger {
+  &--open {
+    background: url("../../assets/img/hamburger.svg") no-repeat;
+  }
+  &--close {
+    background: url("../../assets/img/close.svg") no-repeat;
+  }
+}
+
 .entryLines {
   position: absolute;
   &--left {
