@@ -22,21 +22,23 @@
 .entryLines {
   position: absolute;
   &--left {
-    top: 15px;
-    left: 0;
+    left: -15px;
+    top: 0;
   }
   &--right {
-    bottom: 15px;
-    right: 0;
+    bottom: 0;
+    right: -15px;
   }
+}
+
+.logo {
+  margin: auto;
 }
 
 .section {
   position: relative;
   display: flex;
-  &__Column {
-    align-self: center;
-  }
+  min-height: 100vh;
   &__Heading {
     text-align: center;
     &--h1 {
@@ -55,6 +57,5 @@
     left: 0;
     right: 0;
     text-align: center;
-    margin-bottom: 30px;
   }
 }

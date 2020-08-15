@@ -1,8 +1,22 @@
 @import "common";
 
-body {
+html, body {
   @include defaultFont($mobileDefaultFontSize);
 }
 
+.entryLines {
+  width: 100px;
+}
+
+.logo {
+  width: 80%;
+}
+
 .section {
+  &__PageTrigger {
+    margin-bottom: 20px;
+  }
+  &__PageTriggerImg {
+    width: 40px;
+  }
 }

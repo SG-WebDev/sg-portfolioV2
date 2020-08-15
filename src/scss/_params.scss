@@ -7,7 +7,7 @@ $gray: #666666;
 $mainFontFamily: 'Raleway', sans-serif;
 $altFontFamily: 'Julius Sans One', sans-serif;
 $desktopDefaultFontSize: 24px;
-$mobileDefaultFontSize: 20px;
+$mobileDefaultFontSize: 16px;
 
 //mixins
 @mixin defaultFont($fontSize) {
@@ -19,21 +19,23 @@ $mobileDefaultFontSize: 20px;
 
 @mixin heading1 {
   font-family: $altFontFamily;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
+  line-height: 1.25;
   color: $darkGray;
 }
 
 @mixin heading2 {
   font-family: $altFontFamily;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 400;
+  line-height: 1.25;
   color: $darkGray;
 }
 
 @mixin heading3 {
   font-family: $altFontFamily;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: $darkGray;
   letter-spacing: 3px;

@@ -1,6 +1,6 @@
 @import "common";
 
-body {
+html, body {
   @include defaultFont($desktopDefaultFontSize);
 }
 
@@ -10,11 +10,22 @@ body {
   height: 40px;
 }
 
+.entryLines {
+  width: 250px;
+}
+
 .logo {
-  width: 600px;
-  margin: auto;
+  max-width: 600px;
 }
 
 .section {
-  min-height: 100vh;
+  &__Column {
+    align-self: center;
+  }
+  &__PageTrigger {
+    margin-bottom: 30px;
+  }
+  &__PageTriggerImg {
+    width: 60px;
+  }
 }
