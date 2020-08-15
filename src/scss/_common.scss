@@ -38,18 +38,24 @@
 .section {
   position: relative;
   display: flex;
-  min-height: 100vh;
   &__Heading {
     text-align: center;
     &--h1 {
       @include heading1();
+      margin: 10px 0;
     }
     &--h2 {
       @include heading2();
+      margin: 25px 0;
     }
     &--h3 {
       @include heading3();
+      margin: 10px 0;
     }
+  }
+  &__Text {
+    @include text();
+    text-align: justify;
   }
   &__PageTrigger {
     position: absolute;

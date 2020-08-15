@@ -11,7 +11,7 @@ html, body {
 }
 
 .entryLines {
-  width: 250px;
+  width: 200px;
 }
 
 .logo {
@@ -19,8 +19,12 @@ html, body {
 }
 
 .section {
+  min-height: 100vh;
   &__Column {
     align-self: center;
+  }
+  &__Text {
+    padding: 0 25px;
   }
   &__PageTrigger {
     margin-bottom: 30px;

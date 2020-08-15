@@ -13,6 +13,12 @@ html, body {
 }
 
 .section {
+  &--entry {
+    min-height: 100vh;
+  }
+  &__Text {
+    padding: 0 10px;
+  }
   &__PageTrigger {
     margin-bottom: 20px;
   }

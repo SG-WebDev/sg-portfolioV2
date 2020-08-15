@@ -31,6 +31,7 @@ $mobileDefaultFontSize: 16px;
   font-weight: 400;
   line-height: 1.25;
   color: $darkGray;
+  text-transform: uppercase;
 }
 
 @mixin heading3 {
@@ -39,4 +40,11 @@ $mobileDefaultFontSize: 16px;
   font-weight: 400;
   color: $darkGray;
   letter-spacing: 3px;
+}
+
+@mixin text {
+  font-family: $mainFontFamily;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $gray;
 }
