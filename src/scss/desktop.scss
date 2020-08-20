@@ -8,6 +8,18 @@ html, body {
   margin: 25px;
   width: 40px;
   height: 40px;
+  background-position: center;
+  &--close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+}
+
+.nav {
+  width: 50vw;
+  margin-left: 50vw;
+  box-shadow: 0 0 75px -25px $gray
 }
 
 .entryLines {
@@ -15,7 +27,7 @@ html, body {
 }
 
 .logo {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .section {

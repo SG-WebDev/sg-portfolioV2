@@ -4,6 +4,10 @@ html, body {
   @include defaultFont($mobileDefaultFontSize);
 }
 
+.nav {
+  width: 100vw;
+}
+
 .entryLines {
   width: 100px;
 }
