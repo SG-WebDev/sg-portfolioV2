@@ -6,7 +6,7 @@
   "scripts": {
     "scss:mobile": "node-sass ./src/scss/mobile.scss --source-map true -o -r ./dist/css/mobile.css --output-style compressed",
     "scss:desktop": "node-sass ./src/scss/desktop.scss --source-map true -o -r ./dist/css/desktop.css --output-style compressed",
-    "js:uglify": "uglifyjs ./src/js/* --output dist/js/index.js",
+    "js:terser": "terser ./src/js/* --output dist/js/index.js",
     "dev": "npm-run-all -p scss:* js:*",
     "watch": "watch \"npm run dev\" ./src"
   },
@@ -23,7 +23,7 @@
   "devDependencies": {
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
-    "uglify-js": "^3.10.1",
+    "terser": "^5.2.1",
     "watch": "^1.0.2"
   }
 }
