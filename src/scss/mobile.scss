@@ -4,8 +4,31 @@ html, body {
   @include defaultFont($mobileDefaultFontSize);
 }
 
+.navTrigger {
+  margin: 15px;
+  &--close {
+    right: 0;
+  }
+}
+
 .nav {
   width: 100vw;
+  &__Header {
+    flex-direction: column;
+    padding: 25px;
+  }
+  &__Content {
+    margin: 0 15px;
+    padding: 0 10px;
+  }
+  &__Item {
+    margin: 15px 0;
+  }
+  &__Lang {
+    align-self: center;
+    margin-top: 30px;
+    font-size: 1.5em;
+  }
 }
 
 .entryLines {
