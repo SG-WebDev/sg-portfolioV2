@@ -1,5 +1,10 @@
 @import 'params';
 
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 .nav {
   position: fixed;
   height: 100vh;
