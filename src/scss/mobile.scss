@@ -5,7 +5,7 @@ html, body {
 }
 
 .navTrigger {
-  margin: 15px;
+  margin: 10px;
   &--close {
     right: 0;
   }
@@ -51,5 +51,40 @@ html, body {
   }
   &__PageTriggerImg {
     width: 40px;
+  }
+}
+
+.contact {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__Title {
+    font-size: 1.25em;
+    font-weight: 200;
+    text-align: center;
+  }
+  &__Email {
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.footer {
+  margin-top: 25vh;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  &__Caption {
+    margin-top: 50px;
+    text-align: center;
+  }
+  &__IconsContainer {
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+  &__Icon {
+    width: 30px;
   }
 }

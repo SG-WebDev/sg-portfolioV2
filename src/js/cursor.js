@@ -4,7 +4,9 @@ const hoverElements = [
     ".nav__LangItem",
     ".nav__Item",
     ".section__PageTrigger",
-    ".portfolioList__Item"
+    ".portfolioList__Item",
+    ".contact__Email",
+    ".footer__IconWrapper"
 ];
 if(isDesktop) {
     motionPointerInit(hoverElements);

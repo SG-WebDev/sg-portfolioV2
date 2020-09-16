@@ -2,7 +2,7 @@
 const body = document.querySelector('body')
 const sections = document.querySelectorAll('.section');
 const navLinks = document.querySelectorAll('.nav__ItemLink');
-const sectionScrollOffset = 200;
+const sectionScrollOffset = 300;
 const isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
 
 // Navigation Methods
