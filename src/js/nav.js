@@ -3,7 +3,7 @@ const body = document.querySelector('body')
 const sections = document.querySelectorAll('.section');
 const navLinks = document.querySelectorAll('.nav__ItemLink');
 const sectionScrollOffset = 300;
-const isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+const isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf('Mobi') > -1;
 
 // Navigation Methods
 const removeAllActiveClass = () => {
@@ -13,19 +13,17 @@ const removeAllActiveClass = () => {
 };
 
 const disableScrolling = () => {
-    body.classList.add("no-scroll");
+    body.classList.add('no-scroll');
 };
 
 const enableScrolling = () => {
-    body.classList.remove("no-scroll");
+    body.classList.remove('no-scroll');
 };
 
 const addNavLinksEvent = () => {
     navLinks.forEach( navLink => {
         navLink.addEventListener('click', function(e) {
             e.preventDefault();
-            console.log(e);
-            console.log(this);
             let target = this.getAttribute('href');
             this.classList.add('nav__ItemLink--active');
             document.querySelector(`${target}`).scrollIntoView({
@@ -43,7 +41,7 @@ const addNavScrollEvent = () => {
         if (currentScrolling !== currentActive) {
             removeAllActiveClass();
             currentActive = currentScrolling;
-            navLinks[currentScrolling].classList.add("nav__ItemLink--active");
+            navLinks[currentScrolling].classList.add('nav__ItemLink--active');
         }
     });
 }
@@ -55,8 +53,8 @@ const addNavDisplayEvent = () => {
 
     navOpenTrigger.addEventListener('click',  () => {
         navPanel.classList.add('nav--open');
-        navPanel.style.zIndex = "2";
-        navPanel.style.opacity = "1";
+        navPanel.style.zIndex = '2';
+        navPanel.style.opacity = '1';
         if(isMobile) {
             disableScrolling();
         }

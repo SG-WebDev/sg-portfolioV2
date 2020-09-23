@@ -12,7 +12,7 @@ loadLangData()
         langData = data;
     })
     .catch((error) => {
-        alert("Cannot load language data");
+        alert('Cannot load language data');
     });
 
 langItems.forEach( langItem => {
