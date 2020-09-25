@@ -134,6 +134,9 @@
 .section {
   position: relative;
   display: flex;
+  &__Row {
+    flex: 1 0 100%;
+  }
   &__Heading {
     text-align: center;
     &--h1 {
