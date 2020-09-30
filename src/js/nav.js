@@ -1,9 +1,9 @@
 // Navigation Variables
-const body = document.querySelector('body')
+const body = document.querySelector('body');
 const sections = document.querySelectorAll('.section');
+const navPanel = document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav__ItemLink');
 const sectionScrollOffset = 300;
-const isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf('Mobi') > -1;
 
 // Navigation Methods
 const removeAllActiveClass = () => {
@@ -13,11 +13,30 @@ const removeAllActiveClass = () => {
 };
 
 const disableScrolling = () => {
+    const scrollbarWidth = window.innerWidth - document.body.clientWidth;
     body.classList.add('no-scroll');
+    body.style.marginRight = `${scrollbarWidth}px`;
 };
 
 const enableScrolling = () => {
     body.classList.remove('no-scroll');
+    body.style.marginRight = '0';
+};
+
+const showNavPanel = () => {
+    navPanel.classList.add('nav--open');
+    navPanel.style.zIndex = '2';
+    navPanel.style.opacity = '1';
+    disableScrolling();
+};
+
+const hideNavPanel = () => {
+    navPanel.classList.remove('nav--open');
+    enableScrolling();
+    setTimeout(function () {
+        navPanel.style.zIndex = null;
+        navPanel.style.opacity = null;
+    },750);
 };
 
 const addNavLinksEvent = () => {
@@ -26,9 +45,12 @@ const addNavLinksEvent = () => {
             e.preventDefault();
             let target = this.getAttribute('href');
             this.classList.add('nav__ItemLink--active');
-            document.querySelector(`${target}`).scrollIntoView({
-                behavior: 'smooth'
-            });
+            hideNavPanel();
+            setTimeout(function () {
+                document.querySelector(`${target}`).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            },375)
             return false;
         }, false);
     });
@@ -49,26 +71,13 @@ const addNavScrollEvent = () => {
 const addNavDisplayEvent = () => {
     const navOpenTrigger = document.querySelector('.navTrigger--open');
     const navCloseTrigger = document.querySelector('.navTrigger--close');
-    const navPanel = document.querySelector('.nav');
 
     navOpenTrigger.addEventListener('click',  () => {
-        navPanel.classList.add('nav--open');
-        navPanel.style.zIndex = '2';
-        navPanel.style.opacity = '1';
-        if(isMobile) {
-            disableScrolling();
-        }
+        showNavPanel();
     }, false);
 
     navCloseTrigger.addEventListener('click',  () => {
-        navPanel.classList.remove('nav--open');
-        setTimeout(function () {
-            navPanel.style.zIndex = null;
-            navPanel.style.opacity = null;
-            if(isMobile) {
-                enableScrolling();
-            }
-        },500)
+        hideNavPanel();
     }, false);
 }
 
@@ -76,4 +85,3 @@ const addNavDisplayEvent = () => {
 addNavLinksEvent();
 addNavScrollEvent();
 addNavDisplayEvent();
-
