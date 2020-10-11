@@ -13,7 +13,34 @@ const logoSPathLength = logoSPath.getTotalLength();
 const logoGPathLength = logoGPath.getTotalLength();
 gsap.set(logoSPath, {strokeDasharray: logoSPathLength});
 gsap.set(logoGPath, {strokeDasharray: logoGPathLength});
-gsap.fromTo(logoSPath, 3, {strokeDashoffset:logoSPathLength}, {strokeDashoffset:0, delay: 1});
-gsap.fromTo(logoGPath, 3, {strokeDashoffset:logoGPathLength}, {strokeDashoffset:0, delay: 1});
-gsap.to(logoSPath, {fillOpacity: 1, duration: 1, delay: 4});
-gsap.to(logoGPath, {fillOpacity: 1, duration: 1, delay: 4});
+gsap.fromTo(logoSPath, 2, {strokeDashoffset:logoSPathLength}, {strokeDashoffset:0});
+gsap.fromTo(logoGPath, 2, {strokeDashoffset:logoGPathLength}, {strokeDashoffset:0});
+gsap.to(logoSPath, {fillOpacity: 1, duration: 1, delay: 2});
+gsap.to(logoGPath, {fillOpacity: 1, duration: 1, delay: 2});
+
+//scroll trigger animation
+const contentSections = document.querySelectorAll('.section');
+ScrollTrigger.matchMedia({
+    // desktop
+    "(min-width: 992px)": function() {
+        contentSections.forEach(section => {
+            console.log(section.id);
+            gsap.fromTo(`#${section.id} .section__Column`, {y: '+=200', opacity: 0}, {y: 0, opacity: 1, stagger: 0.25, duration: 1, ease: 'easeInOut',
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top 25%',
+                }});
+        });
+    },
+    // mobile
+    "(max-width: 991px)": function() {
+        contentSections.forEach(section => {
+            console.log(section.id);
+            gsap.fromTo(`#${section.id} .section__Column`, {y: '+=100', opacity: 0}, {y: 0, opacity: 1, stagger: 0.25, duration: 1, ease: 'easeInOut',
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top 75%',
+                }});
+        });
+    },
+});

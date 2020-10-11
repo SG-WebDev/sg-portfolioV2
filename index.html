@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500&display=swap">
 <!--    <link rel="stylesheet" media="screen and (min-width: 768px)" href="https://unpkg.com/motion-pointer@latest/dist/index.css"/>-->
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="./dist/css/desktop.css"/>
-    <link rel="stylesheet" media="screen and (max-width: 767px)" href="./dist/css/mobile.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="./dist/css/desktop.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 991px)" href="./dist/css/mobile.css"/>
     <title>Szymon Grobelny</title>
     <meta name="robots" content="index, follow"/>
     <meta name="description"
@@ -59,7 +59,7 @@
             </svg>
         </div>
         <div class="row section__Row">
-            <div class="col-12 col-md-6 section__Column mt-auto mt-md-0">
+            <div class="col-12 col-lg-6 section__Column mt-auto mt-lg-0">
                 <div class="logo">
                     <svg id="logoSVG" width="100%" height="100%" viewBox="0 0 7424 7070" xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" stroke-linecap="square" stroke-linejoin="round">
@@ -80,7 +80,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="col-12 col-md-6 section__Column">
+            <div class="col-12 col-lg-6 section__Column">
                 <h1 class="section__Heading section__Heading--h1">Szymon Grobelny</h1>
                 <h3 class="section__Heading section__Heading--h3">Front-End Developer</h3>
             </div>
@@ -92,16 +92,16 @@
                 <rect id="entryRightLine_3" width="5" height="347" transform="translate(245.366 0) rotate(45)" fill="#d0a264" opacity="0.5"/>
             </svg>
         </div>
-        <div class="section__PageTrigger">
-            <img class="section__PageTriggerImg" src="./assets/img/arrow-down-rounded.svg" alt="Next Page">
-        </div>
+<!--        <div class="section__PageTrigger">-->
+<!--            <img class="section__PageTriggerImg" src="./assets/img/arrow-down-rounded.svg" alt="Next Page">-->
+<!--        </div>-->
     </section>
     <section id="AboutSection" class="section section--about">
         <div class="row section__Row">
-            <div class="col-12 col-md-6 section__Column">
+            <div class="col-12 col-lg-6 section__Column">
                 <h2 class="section__Heading section__Heading--h2" data-content="about_title">o mnie</h2>
             </div>
-            <div class="col-12 col-md-6 section__Column">
+            <div class="col-12 col-lg-6 section__Column">
                 <p class="section__Text" data-content="about_paragraph1">
                     Jestem programistą tworzącym wygląd serwisów internetowych i aplikacji moblinych.
                 </p>
@@ -116,10 +116,10 @@
     </section>
     <section id="PortfolioSection" class="section section--portfolio">
         <div class="row section__Row">
-            <div class="col-12 col-md-6 section__Column">
+            <div class="col-12 col-lg-6 section__Column">
                 <h2 class="section__Heading section__Heading--h2" data-content="portfolio_title">Projekty</h2>
             </div>
-            <div class="col-12 col-md-6 section__Column">
+            <div class="col-12 col-lg-6 section__Column">
                 <div class="portfolioList">
                     <div class="portfolioList__Item" onclick="">
                         <span class="portfolioList__ItemText">Monoaudio.pl</span>
@@ -147,10 +147,10 @@
     </section>
     <section id="ContactSection" class="section section--contact">
         <div class="row section__Row">
-            <div class="col-12 col-md-6 section__Column">
+            <div class="col-12 col-lg-6 section__Column">
                 <h2 class="section__Heading section__Heading--h2" data-content="contact_title">Kontakt</h2>
             </div>
-            <div class="col-12 col-md-6 section__Column">
+            <div class="col-12 col-lg-6 section__Column">
                 <div class="contact">
                     <div class="contact__Title" data-content="contact_heading">Zapraszam do współpracy!</div>
                     <a class="contact__Email" href="mailto:sgrobelny.contact@gmail.com">sgrobelny.contact@gmail.com</a>
@@ -160,10 +160,10 @@
     </section>
     <footer class="footer">
         <div class="row section__Row">
-            <div class="col-12 col-md-6 align-self-md-end order-1 order-md-0">
+            <div class="col-12 col-lg-6 align-self-lg-end order-1 order-lg-0">
                 <div class="footer__Caption">&copy; Szymon Grobelny</div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-lg-6">
                 <div class="footer__IconsContainer">
                     <a class="footer__IconWrapper" href="https://github.com/SG-WebDev" target="_blank">
                         <img class="footer__Icon" src="./assets/img/github.svg" alt="Github">
@@ -184,6 +184,7 @@
 </main>
 <!--<script src="https://unpkg.com/motion-pointer@latest/dist/index.js"></script>-->
 <script src="./lib/gsap/gsap.min.js"></script>
+<script src="./lib/gsap/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js" integrity="sha512-2vgSeT4mD0azBGIp91Fnho9fbT8ZG8zu5c+mK//TGxj4YNX2mRAwEZHtZsMRwA7ObqH6Vl7mMOdvkzNVTuhUcA==" crossorigin="anonymous"></script>
 <script async src="./dist/js/index.js"></script>
 </body>
