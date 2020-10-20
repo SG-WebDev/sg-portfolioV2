@@ -1,3 +1,67 @@
 {
-
+  "monoaudio":
+  {
+    "name": "monoaudio.pl",
+    "descPL": "Strona wizytówkowa realizatora dźwięku. Montaż i edycja materiałów dźwiękowych i podcastów.",
+    "descEN": "Personal business site for setup and editing of sound recordings.",
+    "webURL": "https://monoaudio.pl/",
+    "codeURL": "https://github.com/SG-WebDev/monoaudio",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/monoaudio-desktop.jpg",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/monoaudio-mobile.jpg",
+    "techStackInfo": "HTML, SCSS, BEM, Bootstrap 4",
+    "fontsInfo": "Raleway, Font Awesome 5",
+    "colorsInfo": "#ae9481, #72514a, #333333"
+  },
+  "card-creo":
+  {
+    "name": "Card Creo App",
+    "descPL": "Aplikacja mobilna stworzona do generowania prowizorycznych wizytówek ręcznie lub za pomocą QR Scanner z funkcją udostępniania między aplikacjami.",
+    "descEN": "A Hybrid mobile app to create and generate simple business cards manually or automatic through QR Scanner with sharing cards between apps functionality.",
+    "webURL": "https://github.com/SG-WebDev/card-creo/tree/master/apk",
+    "codeURL": "https://github.com/SG-WebDev/card-creo",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/cardCreo-desktop.jpg",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/cardCreo-mobile.jpg",
+    "techStackInfo": "Framework7, Cordova, Vue, Axios, SCSS",
+    "fontsInfo": "Raleway, Material Icons, Framework7 Icons",
+    "colorsInfo": "#ec644b, #444444"
+  },
+  "motion-pointer":
+  {
+    "name": "motion-pointer npm package",
+    "descPL": "Mała paczka npm napisana w CSS i JS do zmiany wyglądu kursora myszki.",
+    "descEN": "Small custom mouse cursor CSS & JS library for fancy UX.",
+    "webURL": "https://www.npmjs.com/package/motion-pointer",
+    "codeURL": "https://github.com/SG-WebDev/motion-pointer",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/motionPointer-desktop.jpg",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/motionPointer-mobile.jpg",
+    "techStackInfo": "JS, SCSS, npm packages",
+    "fontsInfo": "-",
+    "colorsInfo": "-"
+  },
+  "eco-company":
+  {
+    "name": "Eco Company Template",
+    "descPL": "Szablon strony wizytówkowej o tematyce działaności ekologicznej.",
+    "descEN": "Eco company business site template.",
+    "webURL": "https://sg-webdev.github.io/eco-company",
+    "codeURL": "https://github.com/SG-WebDev/eco-company",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/ecoCompany-desktop.jpg",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/ecoCompany-mobile.jpg",
+    "techStackInfo": "HTML, JS, JQuery, Bootstrap 4, CSS, AOS, PHP",
+    "fontsInfo": "Raleway, Font Awesome 5",
+    "colorsInfo": "#66cc99, #666666, #333333"
+  },
+  "sgrobelny":
+  {
+    "name": "sgrobelny.dev",
+    "descPL": "Strona wizytówkowa programisty front-end.",
+    "descEN": "Front-end developer portfolio page",
+    "webURL": "https://sgrobelny.dev",
+    "codeURL": "https://github.com/SG-WebDev/sg-portfolioV2",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/sgrobelny-desktop.jpg",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/sgrobelny-mobile.jpg",
+    "techStackInfo": "HTML, SCSS, BEM, Bootstrap 4, JS, GSAP, Fetch API, Adobe XD",
+    "fontsInfo": "Raleway, Julius Sans One, Font Awesome 5",
+    "colorsInfo": "#d0a264, #333333, #666666"
+  }
 }
