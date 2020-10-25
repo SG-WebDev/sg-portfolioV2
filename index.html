@@ -49,12 +49,45 @@
 <template id="projectView" class="project">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-lg-6"></div>
-            <div class="col-12 col-lg-6"></div>
+            <div class="col-12 col-lg-6">
+                <div class="devicePreview devicePreview--desktop">
+                    <img data-project="desktopPreviewURL" src="" alt="projectPreview">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div data-project="name" class="project__Title"></div>
+                <div data-project="desc" class="project__Desc"></div>
+                <div class="project__LinksContainer">
+                    <a data-project="webURL" class="project__WebLink" href="" target="_blank">
+                        <img class="project__LinkImg" src="./assets/img/network.svg" alt="webIcon">
+                    </a>
+                    <a data-project="codeURL" class="project__CodeLink" href="" target="_blank">
+                        <img class="project__LinkImg" src="./assets/img/branch.svg" alt="codeIcon">
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-6"></div>
-            <div class="col-12 col-lg-6"></div>
+            <div class="col-12 col-lg-6">
+                <div class="devicePreview devicePreview--mobile">
+                    <img data-project="mobilePreviewURL" src="" alt="projectPreview">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="project__Heading">Details</div>
+                <div class="project__Block">
+                    <div class="project__BlockHeading">Tech Stack</div>
+                    <div data-project="tech" class="project__BlockContent"></div>
+                </div>
+                <div class="project__Block">
+                    <div class="project__BlockHeading">Fonts</div>
+                    <div data-project="fonts" class="project__BlockContent"></div>
+                </div>
+                <div class="project__Block">
+                    <div class="project__BlockHeading">UI Colors</div>
+                    <div data-project="colors" class="project__BlockContent"></div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
