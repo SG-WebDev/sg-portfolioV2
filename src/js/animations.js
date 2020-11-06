@@ -24,10 +24,10 @@ ScrollTrigger.matchMedia({
     // desktop
     "(min-width: 992px)": function() {
         contentSections.forEach(section => {
-            gsap.fromTo(`#${section.id} .section__Column`, {y: '+=200', opacity: 0}, {y: 0, opacity: 1, stagger: 0.25, duration: 1, ease: 'easeInOut',
+            gsap.fromTo(`#${section.id} .section__Column`, {y: '+=100', opacity: 0}, {y: 0, opacity: 1, stagger: 0.25, duration: 0.75, ease: 'easeInOut',
                 scrollTrigger: {
                     trigger: section,
-                    start: 'top 50%',
+                    start: 'top 25%',
                 }});
         });
     },
