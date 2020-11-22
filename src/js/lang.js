@@ -15,6 +15,7 @@ loadLangData()
         console.log('Cannot load language data');
     });
 
+localStorage.setItem('lang', 'pl');
 langItems.forEach( langItem => {
     langItem.addEventListener('click', function (e) {
         let lang = this.getAttribute('data-lang');
@@ -25,9 +26,11 @@ langItems.forEach( langItem => {
         let chosenLang;
         switch (lang) {
             case 'pl':
+                localStorage.setItem('lang', 'pl');
                 chosenLang = langData.pl;
                 break;
             case 'en':
+                localStorage.setItem('lang', 'en');
                 chosenLang = langData.en;
                 break;
         }

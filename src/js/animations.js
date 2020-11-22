@@ -27,7 +27,7 @@ ScrollTrigger.matchMedia({
             gsap.fromTo(`#${section.id} .section__Column`, {y: '+=100', opacity: 0}, {y: 0, opacity: 1, stagger: 0.25, duration: 0.75, ease: 'easeInOut',
                 scrollTrigger: {
                     trigger: section,
-                    start: 'top 25%',
+                    start: 'top 40%',
                 }});
         });
     },
