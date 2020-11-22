@@ -4,6 +4,38 @@ $darkGray: #333333;
 $gray: #666666;
 
 //fonts
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''),
+  url('../../assets/fonts/raleway-v18-latin-ext_latin-200.woff2') format('woff2'),
+  url('../../assets/fonts/raleway-v18-latin-ext_latin-200.woff') format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../../assets/fonts/raleway-v18-latin-ext_latin-regular.woff2') format('woff2'),
+  url('../../assets/fonts/raleway-v18-latin-ext_latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+  url('../../assets/fonts/raleway-v18-latin-ext_latin-500.woff2') format('woff2'),
+  url('../../assets/fonts/raleway-v18-latin-ext_latin-500.woff') format('woff');
+}
+@font-face {
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../../assets/fonts/julius-sans-one-v9-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../../assets/fonts/julius-sans-one-v9-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 $mainFontFamily: 'Raleway', sans-serif;
 $altFontFamily: 'Julius Sans One', sans-serif;
 $desktopDefaultFontSize: 24px;
