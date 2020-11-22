@@ -8,8 +8,8 @@
     "codeURL": "https://github.com/SG-WebDev/monoaudio",
     "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/monoaudio-desktop.jpg",
     "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/monoaudio-mobile.jpg",
-    "tech": "HTML, SCSS, BEM, Bootstrap 4",
-    "fonts": "Raleway, Font Awesome 5",
+    "tech": "#HTML #SCSS #BEM #Bootstrap4",
+    "fonts": "Raleway, Font Awesome5",
     "colors": "#ae9481, #72514a, #333333"
   },
   "card-creo":
@@ -21,7 +21,7 @@
     "codeURL": "https://github.com/SG-WebDev/card-creo",
     "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/cardCreo-desktop.jpg",
     "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/cardCreo-mobile.jpg",
-    "tech": "Framework7, Cordova, Vue, Axios, SCSS",
+    "tech": "#Framework7 #Cordova #Vue #Axios #SCSS",
     "fonts": "Raleway, Material Icons, Framework7 Icons",
     "colors": "#ec644b, #444444"
   },
@@ -34,7 +34,7 @@
     "codeURL": "https://github.com/SG-WebDev/motion-pointer",
     "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/motionPointer-desktop.jpg",
     "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/motionPointer-mobile.jpg",
-    "tech": "JS, SCSS, npm packages",
+    "tech": "#JS #SCSS #npm packages",
     "fonts": "-",
     "colors": "-"
   },
@@ -47,8 +47,8 @@
     "codeURL": "https://github.com/SG-WebDev/eco-company",
     "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/ecoCompany-desktop.jpg",
     "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/ecoCompany-mobile.jpg",
-    "tech": "HTML, JS, JQuery, Bootstrap 4, CSS, AOS, PHP",
-    "fonts": "Raleway, Font Awesome 5",
+    "tech": "#HTML #JS #JQuery #Bootstrap4 #CSS #AOS #PHP",
+    "fonts": "Raleway, Font Awesome5",
     "colors": "#66cc99, #666666, #333333"
   },
   "sgrobelny":
@@ -60,8 +60,8 @@
     "codeURL": "https://github.com/SG-WebDev/sg-portfolioV2",
     "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/sgrobelny-desktop.jpg",
     "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/sgrobelny-mobile.jpg",
-    "tech": "HTML, SCSS, BEM, Bootstrap 4, JS, GSAP, Fetch API, Adobe XD",
-    "fonts": "Raleway, Julius Sans One, Font Awesome 5",
+    "tech": "#HTML #SCSS #BEM #Bootstrap4 #JS #GSAP #Fetch API #Adobe XD",
+    "fonts": "Raleway, Julius Sans One, Font Awesome5",
     "colors": "#d0a264, #333333, #666666"
   }
 }

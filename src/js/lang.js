@@ -2,7 +2,7 @@ const langItems = document.querySelectorAll('.nav__LangItem');
 const contentElements = document.querySelectorAll('[data-content]');
 
 async function loadLangData() {
-    let response = await fetch('https://sgrobelny.dev/assets/data/lang.json');
+    let response = await fetch('http://localhost:63342/sg-portfolioV2/assets/data/lang.json');
     return await response.json();
 }
 

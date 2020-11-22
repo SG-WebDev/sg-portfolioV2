@@ -2,6 +2,8 @@
 
 body {
   overflow-x: hidden;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .no-scroll {
@@ -253,13 +255,70 @@ body {
   }
   &__CloseButton {
     cursor: pointer;
-    width: 40px;
-    height: 40px;
     margin: 20px;
-    background: url("../../assets/img/close.svg") no-repeat center;
-    position: absolute;
-    top: 0;
-    right: 0;
     z-index: 2;
+    &--times {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      background: url("../../assets/img/close.svg") no-repeat center;
+      top: 0;
+      right: 0;
+    }
+    &--arrow {
+      background: url("../../assets/img/arrow-left.svg") no-repeat center;
+      height: 40px;
+      width: 60px;
+    }
+  }
+  &__Section {
+    display: flex;
+  }
+  &__Row {
+    flex: 1 0 100%;
+  }
+  &__Title {
+    font-size: 2em;
+    text-align: center;
+    margin: 40px auto;
+  }
+  &__Desc {
+    text-align: center;
+    margin: 25px auto;
+  }
+  &__LinksContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__Link {
+    padding: 10px;
+    margin: 20px 40px;
+    transition: transform 0.25s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__LinkImg {
+    width: 50px;
+    height: auto;
+  }
+  &__Heading {
+    @include heading3();
+    text-align: center;
+    margin: 20px auto;
+  }
+  &__Block {
+    padding: 20px;
+  }
+  &__BlockHeading {
+    text-align: center;
+    font-weight: 500;
+    margin: 15px auto;
+    color: $gray;
+  }
+  &__BlockContent {
+    margin: 10px auto 30px auto;
+    text-align: center;
   }
 }

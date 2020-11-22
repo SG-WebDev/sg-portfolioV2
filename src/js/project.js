@@ -1,6 +1,6 @@
 const projectTemplate = document.querySelector('#projectView');
 const portfolioItems = document.querySelectorAll('.portfolioList__Item');
-const projectCloseTrigger = document.querySelector('.project__CloseButton');
+const projectCloseTrigger = document.querySelectorAll('.project__CloseButton');
 
 async function loadPortfolioData() {
     let response = await fetch('http://localhost:63342/sg-portfolioV2/assets/data/portfolio.json');
@@ -64,14 +64,17 @@ const addPortfolioItemsEvent = () => {
             tech.textContent = projectData.tech;
             fonts.textContent = projectData.fonts;
             colors.textContent = projectData.colors;
+            console.log(projectData)
         }, false);
     });
 }
 
 const addHidePanelEvent = () => {
-    projectCloseTrigger.addEventListener('click',  () => {
-        hideProjectTemplate();
-    }, false);
+    projectCloseTrigger.forEach( trigger => {
+        trigger.addEventListener('click',  () => {
+            hideProjectTemplate();
+        }, false);
+    })
 }
 
 addPortfolioItemsEvent();

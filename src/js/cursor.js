@@ -6,7 +6,9 @@ const hoverElements = [
     ".section__PageTrigger",
     ".portfolioList__Item",
     ".contact__Email",
-    ".footer__IconWrapper"
+    ".footer__IconWrapper",
+    ".project__Link",
+    ".project__CloseButton"
 ];
 if(isDesktop) {
     motionPointerInit(hoverElements);
