@@ -6,8 +6,8 @@
     "descEN": "Personal business site for setup and editing of sound recordings.",
     "webURL": "https://monoaudio.pl/",
     "codeURL": "https://github.com/SG-WebDev/monoaudio",
-    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/monoaudio-desktop.jpg",
-    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/monoaudio-mobile.jpg",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/monoaudio-desktop.png",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/monoaudio-mobile.png",
     "tech": "#HTML #SCSS #BEM #Bootstrap4",
     "fonts": "Raleway, Font Awesome5",
     "colors": "#ae9481, #72514a, #333333"
@@ -19,8 +19,8 @@
     "descEN": "A Hybrid mobile app to create and generate simple business cards manually or automatic through QR Scanner with sharing cards between apps functionality.",
     "webURL": "https://github.com/SG-WebDev/card-creo/tree/master/apk",
     "codeURL": "https://github.com/SG-WebDev/card-creo",
-    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/cardCreo-desktop.jpg",
-    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/cardCreo-mobile.jpg",
+    "desktopPreviewURL": "",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/cardCreo-mobile.png",
     "tech": "#Framework7 #Cordova #Vue #Axios #SCSS",
     "fonts": "Raleway, Material Icons, Framework7 Icons",
     "colors": "#ec644b, #444444"
@@ -32,8 +32,8 @@
     "descEN": "Small custom mouse cursor CSS & JS library for fancy UX.",
     "webURL": "https://www.npmjs.com/package/motion-pointer",
     "codeURL": "https://github.com/SG-WebDev/motion-pointer",
-    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/motionPointer-desktop.jpg",
-    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/motionPointer-mobile.jpg",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/motionPointer-desktop.gif",
+    "mobilePreviewURL": "",
     "tech": "#JS #SCSS #npm packages",
     "fonts": "-",
     "colors": "-"
@@ -46,7 +46,7 @@
     "webURL": "https://sg-webdev.github.io/eco-company",
     "codeURL": "https://github.com/SG-WebDev/eco-company",
     "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/ecoCompany-desktop.jpg",
-    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/ecoCompany-mobile.jpg",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/ecoCompany-mobile.png",
     "tech": "#HTML #JS #JQuery #Bootstrap4 #CSS #AOS #PHP",
     "fonts": "Raleway, Font Awesome5",
     "colors": "#66cc99, #666666, #333333"
@@ -58,8 +58,8 @@
     "descEN": "Front-end developer portfolio page",
     "webURL": "https://sgrobelny.dev",
     "codeURL": "https://github.com/SG-WebDev/sg-portfolioV2",
-    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/sgrobelny-desktop.jpg",
-    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/sgrobelny-mobile.jpg",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/sgrobelny-desktop.png",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/sgrobelny-mobile.png",
     "tech": "#HTML #SCSS #BEM #Bootstrap4 #JS #GSAP #Fetch API #Adobe XD",
     "fonts": "Raleway, Julius Sans One, Font Awesome5",
     "colors": "#d0a264, #333333, #666666"
