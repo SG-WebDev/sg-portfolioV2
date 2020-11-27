@@ -255,7 +255,6 @@ body {
   }
   &__CloseButton {
     cursor: pointer;
-    margin: 20px;
     z-index: 2;
     &--times {
       width: 40px;
@@ -273,6 +272,7 @@ body {
   }
   &__Section {
     display: flex;
+    margin: 15px 0;
   }
   &__Row {
     flex: 1 0 100%;
@@ -293,23 +293,18 @@ body {
   }
   &__Link {
     padding: 10px;
-    margin: 20px 40px;
     transition: transform 0.25s ease-in-out;
     &:hover {
       transform: scale(1.2);
     }
   }
   &__LinkImg {
-    width: 50px;
     height: auto;
   }
   &__Heading {
     @include heading3();
     text-align: center;
     margin: 20px auto;
-  }
-  &__Block {
-    padding: 20px;
   }
   &__BlockHeading {
     text-align: center;
@@ -318,7 +313,36 @@ body {
     color: $gray;
   }
   &__BlockContent {
-    margin: 10px auto 30px auto;
     text-align: center;
+    &--colors {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  &__ColorItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__ColorPreview {
+    border: 1px solid $gray;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    &::after {
+      position: absolute;
+      content: "";
+      border: 1px solid $gray;
+      border-radius: 50%;
+    }
+  }
+  &__ColorValue {
+    font-family: $altFontFamily;
+    margin-top: 10px;
   }
 }

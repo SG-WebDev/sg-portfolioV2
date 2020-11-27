@@ -81,3 +81,35 @@ html, body {
     width: 30px;
   }
 }
+
+.project {
+  &__CloseButton {
+    margin: 10px;
+  }
+  &__Desc {
+    font-size: 1.25em;
+  }
+  &__Link {
+    margin: 10px 30px;
+  }
+  &__LinkImg {
+    width: 35px;
+  }
+  &__Block {
+    padding: 10px;
+  }
+  &__BlockHeading {
+    font-size: 1.25em;
+  }
+  &__BlockContent {
+    margin: 10px auto 15px auto;
+  }
+  &__ColorPreview {
+    width: 50px;
+    height: 50px;
+    &::after {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}

@@ -63,8 +63,21 @@ const addPortfolioItemsEvent = () => {
             codeURL.href = projectData.codeURL;
             tech.textContent = projectData.tech;
             fonts.textContent = projectData.fonts;
-            colors.textContent = projectData.colors;
-            console.log(projectData)
+            let colorsArray = projectData.colors.split(',');
+            colors.innerHTML = null;
+            colorsArray.forEach(colorItem => {
+                let colorItemHtml = document.createElement('div');
+                let colorPreviewHtml = document.createElement('div');
+                let colorValueHtml = document.createElement('div');
+                colorItemHtml.classList.add('project__ColorItem');
+                colorPreviewHtml.classList.add('project__ColorPreview');
+                colorValueHtml.classList.add('project__ColorValue');
+                colorPreviewHtml.style.backgroundColor = colorItem;
+                colorValueHtml.textContent = colorItem;
+                colorItemHtml.appendChild(colorPreviewHtml);
+                colorItemHtml.appendChild(colorValueHtml);
+                colors.appendChild(colorItemHtml);
+            });
         }, false);
     });
 }

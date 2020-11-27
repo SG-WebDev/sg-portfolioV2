@@ -11,7 +11,11 @@
     "about_paragraph3": "Od 2015 roku poszerzam znajomość front-end'owych technologii webowych. Od 2018 roku pracuje na stanowisku Front-End Developer'a.",
     "portfolio_title": "Projekty",
     "contact_title": "Kontakt",
-    "contact_heading": "Zapraszam do współpracy!"
+    "contact_heading": "Zapraszam do współpracy!",
+    "project_heading": "Szczegóły",
+    "project_tech": "Technologie",
+    "project_fonts": "Czcionki",
+    "project_colors": "Kolory"
   },
   "en":
   {
@@ -25,6 +29,10 @@
     "about_paragraph3": "My beginnings with front-end technologies started in 2015. I've been working as a front-end developer since 2018.",
     "portfolio_title": "Portfolio",
     "contact_title": "Contact",
-    "contact_heading": "I'm looking forward to do business with you!"
+    "contact_heading": "I'm looking forward to do business with you!",
+    "project_heading": "Details",
+    "project_tech": "Tech Stack",
+    "project_fonts": "Fonts",
+    "project_colors": "UI Colors"
   }
 }

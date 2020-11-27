@@ -81,3 +81,29 @@ html, body {
     align-self: center;
   }
 }
+
+.project {
+  &__CloseButton {
+    margin: 20px;
+  }
+  &__Link {
+    margin: 20px 40px;
+  }
+  &__LinkImg {
+    width: 50px;
+  }
+  &__Block {
+    padding: 20px;
+  }
+  &__BlockContent {
+    margin: 10px auto 30px auto;
+  }
+  &__ColorPreview {
+    width: 100px;
+    height: 100px;
+    &::after {
+      width: 125px;
+      height: 125px;
+    }
+  }
+}
