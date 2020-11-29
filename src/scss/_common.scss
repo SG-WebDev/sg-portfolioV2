@@ -272,10 +272,14 @@ body {
   }
   &__Section {
     display: flex;
-    margin: 15px 0;
   }
   &__Row {
     flex: 1 0 100%;
+  }
+  &__Column {
+    &--desktopPreview {
+      min-height: (($desktopPreviewWidth * 9) / 16) + $desktopPreviewTopMountHeight + $desktopPreviewBottomMountHeight; //16-9 screen ratio + mount height
+    }
   }
   &__Title {
     font-size: 2em;
@@ -284,7 +288,7 @@ body {
   }
   &__Desc {
     text-align: center;
-    margin: 25px auto;
+    margin: 25px 15px;
   }
   &__LinksContainer {
     display: flex;
@@ -344,5 +348,90 @@ body {
   &__ColorValue {
     font-family: $altFontFamily;
     margin-top: 10px;
+  }
+}
+
+.devicePreview {
+  position: relative;
+  margin: auto;
+  &--desktop {
+    width: #{"min(#{$desktopPreviewWidth}, 100%)"};
+    height: ($desktopPreviewWidth * 9) / 18; //18-9 screen ratio
+    border-style: solid;
+    border-color: $darkGray;
+    border-width: $desktopPreviewHorizontalBorderWidth $desktopPreviewVerticalBorderWidth;
+    border-radius: 12px;
+    margin-bottom: $desktopPreviewTopMountHeight + $desktopPreviewBottomMountHeight;
+    &::before {
+      content: "";
+      position: absolute;
+      width: $desktopPreviewTopMountWidth;
+      height: $desktopPreviewTopMountHeight;
+      background-color: $darkGray;
+      bottom: -($desktopPreviewVerticalBorderWidth + $desktopPreviewTopMountHeight);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: $desktopPreviewBottomMountWidth;
+      height: $desktopPreviewBottomMountHeight;
+      background-color: $darkGray;
+      border-radius: 6px;
+      bottom: -($desktopPreviewVerticalBorderWidth + $desktopPreviewTopMountHeight + $desktopPreviewBottomMountHeight);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &--mobile {
+    width: $mobilePreviewWidth;
+    height: ($mobilePreviewWidth * 16) / 9; //9-16 screen ratio
+    border-style: solid;
+    border-color: $darkGray;
+    border-width: $mobilePreviewVerticalBorderWidth $mobilePreviewHorizontalBorderWidth;
+    border-radius: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #000000;
+      width: $mobilePreviewSoundbarWidth;
+      height: $mobilePreviewSoundbarHeight;
+      border-radius: 10px;
+      top: -$mobilePreviewSoundbarHeight -(($mobilePreviewVerticalBorderWidth - $mobilePreviewSoundbarHeight) / 2);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #000000;
+      width: $mobilePreviewButtonWidth;
+      height: $mobilePreviewButtonHeight;
+      border-radius: 10px;
+      bottom: -$mobilePreviewButtonHeight -(($mobilePreviewVerticalBorderWidth - $mobilePreviewButtonHeight) / 2);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__Content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: 3px;
+    scrollbar-color: $gray transparent;
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $gray;
+    }
+  }
+  &__Img {
+    width: 100%;
+    height: auto;
   }
 }

@@ -19,7 +19,7 @@
     "descEN": "A Hybrid mobile app to create and generate simple business cards manually or automatic through QR Scanner with sharing cards between apps functionality.",
     "webURL": "https://github.com/SG-WebDev/card-creo/tree/master/apk",
     "codeURL": "https://github.com/SG-WebDev/card-creo",
-    "desktopPreviewURL": "",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/noDataDesktop.png",
     "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/cardCreo-mobile.png",
     "tech": "#Framework7 #Cordova #Vue #Axios #SCSS",
     "fonts": "Raleway, Material Icons, Framework7 Icons",
@@ -33,7 +33,7 @@
     "webURL": "https://www.npmjs.com/package/motion-pointer",
     "codeURL": "https://github.com/SG-WebDev/motion-pointer",
     "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/motionPointer-desktop.gif",
-    "mobilePreviewURL": "",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/noDataMobile.png",
     "tech": "#JS #SCSS #npm packages",
     "fonts": "-",
     "colors": "-"

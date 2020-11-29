@@ -74,17 +74,15 @@ html, body {
 }
 
 .project {
+  &__CloseButton {
+    margin: 20px;
+  }
   &__Section {
     min-height: 100vh;
+    margin: 15px 0;
   }
   &__Column {
     align-self: center;
-  }
-}
-
-.project {
-  &__CloseButton {
-    margin: 20px;
   }
   &__Link {
     margin: 20px 40px;
@@ -106,4 +104,8 @@ html, body {
       height: 125px;
     }
   }
+}
+
+.devicePreview {;
+  box-sizing: content-box;
 }

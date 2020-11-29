@@ -3,7 +3,7 @@ const portfolioItems = document.querySelectorAll('.portfolioList__Item');
 const projectCloseTrigger = document.querySelectorAll('.project__CloseButton');
 
 async function loadPortfolioData() {
-    let response = await fetch('http://localhost:63342/sg-portfolioV2/assets/data/portfolio.json');
+    let response = await fetch('https://sgrobelny.dev/assets/data/portfolio.json');
     return await response.json();
 }
 

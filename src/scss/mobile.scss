@@ -86,6 +86,9 @@ html, body {
   &__CloseButton {
     margin: 10px;
   }
+  &__Section {
+    margin: 60px 0;
+  }
   &__Desc {
     font-size: 1.25em;
   }
@@ -112,4 +115,8 @@ html, body {
       height: 75px;
     }
   }
+}
+
+.devicePreview {
+  box-sizing: border-box;
 }

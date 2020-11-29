@@ -48,12 +48,14 @@
     <div class="container-fluid">
         <section class="project__Section">
             <div class="row project__Row">
-                <div class="col-12 col-lg-6 project__Column">
+                <div class="col-12 col-xl-6 project__Column">
                     <div class="devicePreview devicePreview--desktop">
-                        <img data-project="desktopPreviewURL" src="" alt="projectPreview">
+                        <div class="devicePreview__Content">
+                            <img class="devicePreview__Img" data-project="desktopPreviewURL" src="" alt="Desktop Project Preview">
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 project__Column">
+                <div class="col-12 col-xl-6 project__Column">
                     <div data-project="name" class="project__Title"></div>
                     <div data-project="desc" class="project__Desc"></div>
                     <div class="project__LinksContainer">
@@ -69,12 +71,14 @@
         </section>
         <section class="project__Section">
             <div class="row project__Row">
-                <div class="col-12 col-lg-6 project__Column">
+                <div class="col-12 col-xl-6 project__Column project__Column--mobilePreview">
                     <div class="devicePreview devicePreview--mobile">
-                        <img data-project="mobilePreviewURL" src="" alt="projectPreview">
+                        <div class="devicePreview__Content">
+                            <img class="devicePreview__Img" data-project="mobilePreviewURL" src="" alt="Mobile Project Preview">
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 project__Column">
+                <div class="col-12 col-xl-6 project__Column">
                     <div class="project__Heading" data-content="project_heading">Szczegóły</div>
                     <div class="project__Block">
                         <div class="project__BlockHeading" data-content="project_tech">Technologie</div>
