@@ -85,6 +85,20 @@ $mobileDefaultFontSize: 12px;
   color: $gray;
 }
 
+@mixin customScrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: $gray transparent;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray;
+  }
+}
+
 //content variables
 $mobilePreviewWidth: 320px;
 $mobilePreviewHorizontalBorderWidth: 16px;
