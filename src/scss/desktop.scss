@@ -15,10 +15,10 @@ html, body {
   &__Header {
     justify-content: space-between;
     align-items: flex-end;
-    padding: 45px;
+    padding: 35px;
   }
   &__Content {
-    margin: 50px;
+    margin: 0 50px;
     padding: 25px;
     &:hover {
       .nav__ItemLink:not(:hover) {

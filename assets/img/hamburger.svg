@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28"><g transform="translate(0 1)"><line x2="40" transform="translate(0 26)" fill="none" stroke="#666666" stroke-width="1"/><line x2="40" transform="translate(0 13)" fill="none" stroke="#666666" stroke-width="1"/><line x2="40" fill="none" stroke="#666666" stroke-width="1"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="25" viewBox="0 0 40 25">
+  <g id="Hamburger-ToOpen" transform="translate(0 0.5)">
+    <path id="Path_6" d="M0,0H40" transform="translate(0 24)" fill="none" stroke="#333" stroke-width="1"/>
+    <line id="Line_5" x2="40" transform="translate(0 12)" fill="none" stroke="#333" stroke-width="1"/>
+    <path id="Path_5" d="M0,0H40" fill="none" stroke="#333" stroke-width="1"/>
+  </g>
+</svg>
