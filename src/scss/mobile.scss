@@ -4,13 +4,6 @@ html, body {
   @include defaultFont($mobileDefaultFontSize);
 }
 
-.navTrigger {
-  margin: 10px;
-  &--close {
-    right: 0;
-  }
-}
-
 .nav {
   &__Header {
     flex-direction: column;

@@ -21,7 +21,6 @@
             <img class="nav__LogoImage" src="./assets/img/logo.svg" alt="LOGO">
             <div class="nav__LogoText">Szymon Grobelny</div>
         </div>
-        <div class="navTrigger navTrigger--close"></div>
         <div class="nav__Lang">
             <div class="nav__LangItem nav__LangItem--active" data-lang="pl">PL</div>
             <div class="nav__LangSeparator">|</div>
@@ -100,7 +99,13 @@
 </div>
 <main class="container-fluid">
     <header class="header">
-        <div class="navTrigger navTrigger--open"></div>
+        <svg id="hamburgerSVG" xmlns="http://www.w3.org/2000/svg" width="40" height="25" viewBox="0 0 40 25" class="navTrigger navTrigger--open">
+            <g id="hamburgerGroup" transform="translate(0)" class="navTrigger__Icon">
+                <path id="hamburgerLine1" class="navTrigger__IconLine" d="M0,0H40" fill="none" stroke="#333" stroke-width="1"/>
+                <line id="hamburgerLine2" class="navTrigger__IconLine"  x2="40" transform="translate(0 12)" fill="none" stroke="#333" stroke-width="1"/>
+                <path id="hamburgerLine3" class="navTrigger__IconLine"  d="M0,0H40" transform="translate(0 24)" fill="none" stroke="#333" stroke-width="1"/>
+            </g>
+        </svg>
     </header>
     <section id="EntrySection" class="section section--entry">
         <div class="entryLines entryLines--left">

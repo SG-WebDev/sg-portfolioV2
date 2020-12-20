@@ -42,3 +42,20 @@ ScrollTrigger.matchMedia({
         });
     },
 });
+
+//navTrigger animation
+const navTriggerSVG = document.querySelector('#hamburgerSVG');
+const navTriggerToggle = gsap.timeline({paused: true, reversed: true});
+navTriggerToggle
+    .to(' #hamburgerLine1', {duration: .4, y:'-6px', transformOrigin: '50% 50%'}, 'open')
+    .to(' #hamburgerLine3', {duration: .4, y:'6px', transformOrigin: '50% 50%'}, 'open')
+    .to(' #hamburgerLine2', {duration: .4, scale: 0, transformOrigin: '50% 50%'}, 'open')
+    .add('close')
+    .to(' #hamburgerLine1', {duration: .4, y:'6px'}, 'close')
+    .to(' #hamburgerLine3', {duration: .4, y:'6px'}, 'close')
+    .to(' #hamburgerLine1', {duration: .4, rotation:45, transformOrigin: '50% 50%'}, 'close')
+    .to(' #hamburgerLine3', {duration: .4, rotation:-45, transformOrigin: '50% 50%'}, 'close');
+
+navTriggerSVG.addEventListener('click',  () => {
+    navTriggerToggle.reversed() ? navTriggerToggle.restart() : navTriggerToggle.reverse();
+}, false);

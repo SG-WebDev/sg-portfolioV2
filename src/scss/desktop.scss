@@ -1,15 +1,9 @@
 @import "common";
 
 html, body {
+  position: relative;
   @include defaultFont($desktopDefaultFontSize);
   @include customScrollbar();
-}
-
-.navTrigger {
-  margin: 20px;
-  &--close {
-    right: 15px;
-  }
 }
 
 .nav {
@@ -62,6 +56,9 @@ html, body {
 }
 
 .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   padding: 25px;
   &__IconsContainer {
     justify-content: flex-end;

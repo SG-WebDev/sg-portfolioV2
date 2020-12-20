@@ -3,6 +3,7 @@ const body = document.querySelector('body');
 const sections = document.querySelectorAll('.section');
 const navPanel = document.querySelector('.nav');
 const navLinks = document.querySelectorAll('.nav__ItemLink');
+const navTrigger = document.querySelector('.navTrigger');
 const sectionScrollOffset = 300;
 
 // Navigation Methods
@@ -25,6 +26,8 @@ const enableScrolling = () => {
 
 const showNavPanel = () => {
     navPanel.classList.add('nav--open');
+    navTrigger.classList.remove("navTrigger--open");
+    navTrigger.classList.add("navTrigger--close");
     navPanel.style.zIndex = '2';
     navPanel.style.opacity = '1';
     disableScrolling();
@@ -32,6 +35,8 @@ const showNavPanel = () => {
 
 const hideNavPanel = () => {
     navPanel.classList.remove('nav--open');
+    navTrigger.classList.remove("navTrigger--close");
+    navTrigger.classList.add("navTrigger--open");
     enableScrolling();
     setTimeout(function () {
         navPanel.style.zIndex = null;
@@ -69,15 +74,13 @@ const addNavScrollEvent = () => {
 }
 
 const addNavDisplayEvent = () => {
-    const navOpenTrigger = document.querySelector('.navTrigger--open');
-    const navCloseTrigger = document.querySelector('.navTrigger--close');
-
-    navOpenTrigger.addEventListener('click',  () => {
-        showNavPanel();
-    }, false);
-
-    navCloseTrigger.addEventListener('click',  () => {
-        hideNavPanel();
+    navTrigger.addEventListener('click',  () => {
+        if(navTrigger.classList.contains("navTrigger--open")) {
+            showNavPanel();
+        }
+        else {
+            hideNavPanel();
+        }
     }, false);
 }
 

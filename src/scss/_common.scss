@@ -98,24 +98,18 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
+  width: $navTriggerWidth + ($navTriggerHorizontalMargin * 2);
+  height: $navTriggerHeight + ($navTriggerVerticalMargin * 2);
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 .navTrigger {
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  &--open {
-    background: url("../../assets/img/hamburger.svg") no-repeat center;
-  }
-  &--close {
-    background: url("../../assets/img/close.svg") no-repeat center;
-    position: absolute;
-    top: 0;
-  }
+  width: $navTriggerWidth;
+  height: $navTriggerHeight;
+  margin: $navTriggerVerticalMargin $navTriggerHorizontalMargin;
 }
 
 .entryLines {
