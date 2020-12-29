@@ -18,7 +18,7 @@ loadPortfolioData()
 
 const showProjectTemplate = () => {
     projectTemplate.classList.add('project--show');
-    projectTemplate.style.zIndex = '2';
+    projectTemplate.style.zIndex = '3';
     projectTemplate.style.opacity = '1';
     disableScrolling();
 };
