@@ -7,7 +7,6 @@ const hoverElements = [
     ".portfolioList__Item",
     ".contact__Email",
     ".footer__IconWrapper",
-    ".project__Link",
     ".project__CloseButton"
 ];
 if(isDesktop) {

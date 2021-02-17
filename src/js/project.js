@@ -7,6 +7,7 @@ async function loadPortfolioData() {
     return await response.json();
 }
 
+//Portfolio view methods
 let projectsData;
 loadPortfolioData()
     .then(data => {
@@ -29,21 +30,31 @@ const hideProjectTemplate = () => {
     setTimeout(function () {
         projectTemplate.style.zIndex = null;
         projectTemplate.style.opacity = null;
-    },750);
+    }, 750);
 };
 
+function addExternalLink(url, type, iconName) {
+    let linkHTML =
+        `<a class="project__Link" href="${url}" target="_blank" rel="noopener noreferrer">
+            <img class="project__LinkImg" src="./assets/img/${iconName}.svg" alt="${type}Icon">
+        </a>`;
+    externalLinks.insertAdjacentHTML("beforeend", linkHTML);
+}
+
+// Project properties
+const desktopPreviewURL = document.querySelector('[data-project=desktopPreviewURL]');
+const mobilePreviewURL = document.querySelector('[data-project=mobilePreviewURL]');
+const title = document.querySelector('[data-project=name]');
+const desc = document.querySelector('[data-project=desc]');
+const externalLinks = document.querySelector('[data-project=externalLinks]');
+const tech = document.querySelector('[data-project=tech]');
+const fonts = document.querySelector('[data-project=fonts]');
+const colors = document.querySelector('[data-project=colors]');
+
+//Add content to portfolio item method
 const addPortfolioItemsEvent = () => {
-    portfolioItems.forEach( navLink => {
-        navLink.addEventListener('click', function(e) {
-            const desktopPreviewURL = document.querySelector('[data-project=desktopPreviewURL]');
-            const mobilePreviewURL = document.querySelector('[data-project=mobilePreviewURL]');
-            const title = document.querySelector('[data-project=name]');
-            const desc = document.querySelector('[data-project=desc]');
-            const webURL = document.querySelector('[data-project=webURL]');
-            const codeURL = document.querySelector('[data-project=codeURL]');
-            const tech = document.querySelector('[data-project=tech]');
-            const fonts = document.querySelector('[data-project=fonts]');
-            const colors = document.querySelector('[data-project=colors]');
+    portfolioItems.forEach(navLink => {
+        navLink.addEventListener('click', function (e) {
             let projectName = navLink.getAttribute('data-name');
             let projectData = projectsData[projectName];
             let currentLang = localStorage.getItem('lang');
@@ -59,8 +70,16 @@ const addPortfolioItemsEvent = () => {
                     desc.textContent = projectData.descEN;
                     break;
             }
-            webURL.href = projectData.webURL;
-            codeURL.href = projectData.codeURL;
+            externalLinks.innerHTML = null;
+            if (projectData.webURL) {
+                addExternalLink(projectData.webURL, "web", "network");
+            }
+            if (projectData.codeURL) {
+                addExternalLink(projectData.codeURL, "code", "branch");
+            }
+            if (projectData.designURL) {
+                addExternalLink(projectData.designURL, "design", "design");
+            }
             tech.textContent = projectData.tech;
             fonts.textContent = projectData.fonts;
             let colorsArray = projectData.colors.split(',');
@@ -83,8 +102,8 @@ const addPortfolioItemsEvent = () => {
 }
 
 const addHidePanelEvent = () => {
-    projectCloseTrigger.forEach( trigger => {
-        trigger.addEventListener('click',  () => {
+    projectCloseTrigger.forEach(trigger => {
+        trigger.addEventListener('click', () => {
             hideProjectTemplate();
         }, false);
     })
