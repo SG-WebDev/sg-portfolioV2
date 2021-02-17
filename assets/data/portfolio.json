@@ -2,8 +2,8 @@
   "monoaudio":
   {
     "name": "monoaudio.pl",
-    "descPL": "Strona wizytówkowa realizatora dźwięku. Montaż i edycja materiałów dźwiękowych i podcastów.",
-    "descEN": "Personal business site for setup and editing of sound recordings.",
+    "descPL": "Strona wizytówkowa realizatora dźwięku.",
+    "descEN": "Personal business site of sound engineer.",
     "webURL": "https://monoaudio.pl/",
     "codeURL": "https://github.com/SG-WebDev/monoaudio",
     "designURL": null,
@@ -13,10 +13,24 @@
     "fonts": "Raleway, Font Awesome5",
     "colors": "#ae9481, #72514a, #333333"
   },
+  "komornik-andrzejewski":
+  {
+    "name": "Komornik Andrzejewski",
+    "descPL": "Strona wizytówkowa komornika sądowego.",
+    "descEN": "Personal business site of court enforcement officer.",
+    "webURL": "https://komornik-andrzejewski.pl/",
+    "codeURL": null,
+    "designURL": "https://www.behance.net/gallery/110194163/Law-Office-Website",
+    "desktopPreviewURL": "https://sgrobelny.dev/assets/img/portfolio/komornik-andrzejewski-desktop.jpg",
+    "mobilePreviewURL": "https://sgrobelny.dev/assets/img/portfolio/komornik-andrzejewski-mobile.png",
+    "tech": "#HTML #SCSS #BEM #Bootstrap4 #JS #Adobe XD",
+    "fonts": "Montserrat, Font Awesome5",
+    "colors": "#c5af9b, #222222"
+  },
   "card-creo":
   {
     "name": "Card Creo App",
-    "descPL": "Aplikacja mobilna stworzona do generowania prowizorycznych wizytówek ręcznie lub za pomocą QR Scanner z funkcją udostępniania między aplikacjami.",
+    "descPL": "Aplikacja mobilna stworzona do generowania wizytówek ręcznie lub za pomocą QR Scanner z funkcją udostępniania między aplikacjami.",
     "descEN": "A Hybrid mobile app to create and generate simple business cards manually or automatic through QR Scanner with sharing cards between apps functionality.",
     "webURL": null,
     "codeURL": "https://github.com/SG-WebDev/card-creo",
@@ -30,8 +44,8 @@
   "motion-pointer":
   {
     "name": "motion-pointer npm package",
-    "descPL": "Mała paczka npm napisana w CSS i JS do zmiany wyglądu kursora myszki.",
-    "descEN": "Small custom mouse cursor CSS & JS library for fancy UX.",
+    "descPL": "Biblioteka npm napisana w CSS i JS służąca do zmiany wyglądu kursora myszki.",
+    "descEN": "Npm package based on CSS & JS technology for custom mouse cursor with fancy UX.",
     "webURL": null,
     "codeURL": "https://github.com/SG-WebDev/motion-pointer",
     "designURL": null,
