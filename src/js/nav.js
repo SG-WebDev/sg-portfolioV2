@@ -50,6 +50,7 @@ const addNavLinksEvent = () => {
             e.preventDefault();
             let target = this.getAttribute('href');
             this.classList.add('nav__ItemLink--active');
+            navTriggerToggle.reverse();
             hideNavPanel();
             setTimeout(function () {
                 document.querySelector(`${target}`).scrollIntoView({
