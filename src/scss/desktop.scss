@@ -7,6 +7,7 @@ html, body {
 }
 
 .nav {
+  @include customScrollbar();
   &__Header {
     justify-content: space-between;
     align-items: flex-end;
